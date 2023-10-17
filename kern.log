@@ -1,0 +1,555 @@
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410f0000]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Linux version 5.15.0-86-generic (buildd@bos02-arm64-054) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #96-Ubuntu SMP Wed Sep 20 08:29:36 UTC 2023 (Ubuntu 5.15.0-86.96-generic 5.15.122)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] efi: EFI v2.70 by EDK II
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] efi: SMBIOS 3.0=0xbf7f0000 ACPI 2.0=0xbc120000 MEMATTR=0xbe19ca98 MOKvar=0xbbee0000 MEMRESERVE=0xbbef6898 
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] secureboot: Secure boot disabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: Early table checksum verification disabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: RSDP 0x00000000BC120000 000024 (v02 PRLS  )
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: XSDT 0x00000000BC110000 000044 (v01 PRLS   PRLS_OEM 00000002      01000013)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: FACP 0x00000000BC030000 000114 (v06 PRLS   PRLS_OEM 00000002 PRLS 00000002)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: DSDT 0x00000000BBFE0000 0010D4 (v02 PRLS   PRLS_OEM 00000003 INTL 20160527)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: GTDT 0x00000000BC020000 000050 (v01 PRLS   PRLS_OEM 00000002 PRLS 00000002)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: MCFG 0x00000000BBFF0000 00003C (v01                 00000001      00000000)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: APIC 0x00000000BBFD0000 00010C (v04 PRLS   PRLS_OEM 00000002 PRLS 00000002)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] NUMA: Failed to initialise from firmware
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] NUMA: NODE_DATA [mem 0xbfbfff80-0xbfc04fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Zone ranges:
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   DMA32    empty
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   Normal   empty
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   Device   empty
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Movable zone start for each node
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Early memory node ranges
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x0000000040000000-0x00000000bbedffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x00000000bbee0000-0x00000000bbeeffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x00000000bbef0000-0x00000000bc03ffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x00000000bc040000-0x00000000bc10ffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x00000000bc110000-0x00000000bf5fffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x00000000bf600000-0x00000000bf9dffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000]   node   0: [mem 0x00000000bf9e0000-0x00000000bfffffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] cma: Reserved 32 MiB at 0x00000000b7000000
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] psci: probing for conduit method from ACPI.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] psci: PSCIv1.0 detected in firmware.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] psci: Trusted OS migration not required
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] psci: SMC Calling Convention v1.0
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI: SRAT not present
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] percpu: Embedded 30 pages/cpu s85720 r8192 d28968 u122880
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] pcpu-alloc: s85720 r8192 d28968 u122880 alloc=30*4096
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Detected PIPT I-cache on CPU0
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] CPU features: detected: Address authentication (IMP DEF algorithm)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] CPU features: detected: Spectre-v4
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] alternatives: patching kernel code
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Policy zone: DMA
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Kernel command line: BOOT_IMAGE=/vmlinuz-5.15.0-86-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-5.15.0-86-generic", will be passed to user space.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] mem auto-init: stack:off, heap alloc:on, heap free:off
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Memory: 1864492K/2097152K available (17280K kernel code, 4576K rwdata, 13928K rodata, 9600K init, 1194K bss, 199892K reserved, 32768K cma-reserved)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ftrace: allocating 54239 entries in 212 pages
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ftrace: allocated 212 pages with 4 groups
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] trace event string verifier disabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] rcu: Hierarchical RCU implementation.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=2.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] 	Rude variant of Tasks RCU enabled.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] 	Tracing variant of Tasks RCU enabled.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] GICv3: 96 SPIs implemented
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] GICv3: 0 Extended SPIs implemented
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] GICv3: Distributor has Range Selector support
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] Root IRQ handler: gic_handle_irq
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] GICv3: 16 PPIs implemented
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000002500000
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] GICv2m: range[mem 0x02250000-0x02250fff], SPI[53:116]
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] ACPI GTDT: Revision:1 doesn't support Platform Timers.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (virt).
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+Oct 17 09:15:57 felixubuntu kernel: [    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Oct 17 09:15:57 felixubuntu kernel: [    0.000025] Console: colour dummy device 80x25
+Oct 17 09:15:57 felixubuntu kernel: [    0.000055] printk: console [tty0] enabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.000065] ACPI: Core revision 20210730
+Oct 17 09:15:57 felixubuntu kernel: [    0.000094] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000096] pid_max: default: 32768 minimum: 301
+Oct 17 09:15:57 felixubuntu kernel: [    0.000119] LSM: Security Framework initializing
+Oct 17 09:15:57 felixubuntu kernel: [    0.000122] landlock: Up and running.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000123] Yama: becoming mindful.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000146] AppArmor: AppArmor initialized
+Oct 17 09:15:57 felixubuntu kernel: [    0.000178] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000188] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.000385] ACPI PPTT: No PPTT table found, CPU and cache topology may be inaccurate
+Oct 17 09:15:57 felixubuntu kernel: [    0.000509] rcu: Hierarchical SRCU implementation.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000661] Remapping and enabling EFI services.
+Oct 17 09:15:57 felixubuntu kernel: [    0.000786] smp: Bringing up secondary CPUs ...
+Oct 17 09:15:57 felixubuntu kernel: [    0.174701] Detected PIPT I-cache on CPU1
+Oct 17 09:15:57 felixubuntu kernel: [    0.174752] GICv3: CPU1: found redistributor 1 region 0:0x0000000002520000
+Oct 17 09:15:57 felixubuntu kernel: [    0.174867] CPU1: Booted secondary processor 0x0000000001 [0x410f0000]
+Oct 17 09:15:57 felixubuntu kernel: [    0.175032] smp: Brought up 1 node, 2 CPUs
+Oct 17 09:15:57 felixubuntu kernel: [    0.175063] SMP: Total of 2 processors activated.
+Oct 17 09:15:57 felixubuntu kernel: [    0.175067] CPU features: detected: ARMv8.4 Translation Table Level
+Oct 17 09:15:57 felixubuntu kernel: [    0.175069] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+Oct 17 09:15:57 felixubuntu kernel: [    0.175073] CPU features: detected: Common not Private translations
+Oct 17 09:15:57 felixubuntu kernel: [    0.175076] CPU features: detected: CRC32 instructions
+Oct 17 09:15:57 felixubuntu kernel: [    0.175077] CPU features: detected: Data cache clean to Point of Deep Persistence
+Oct 17 09:15:57 felixubuntu kernel: [    0.175079] CPU features: detected: Data cache clean to Point of Persistence
+Oct 17 09:15:57 felixubuntu kernel: [    0.175081] CPU features: detected: E0PD
+Oct 17 09:15:57 felixubuntu kernel: [    0.175083] CPU features: detected: Generic authentication (IMP DEF algorithm)
+Oct 17 09:15:57 felixubuntu kernel: [    0.175085] CPU features: detected: RCpc load-acquire (LDAPR)
+Oct 17 09:15:57 felixubuntu kernel: [    0.175086] CPU features: detected: LSE atomic instructions
+Oct 17 09:15:57 felixubuntu kernel: [    0.175088] CPU features: detected: Privileged Access Never
+Oct 17 09:15:57 felixubuntu kernel: [    0.175089] CPU features: detected: RAS Extension Support
+Oct 17 09:15:57 felixubuntu kernel: [    0.175091] CPU features: detected: Speculation barrier (SB)
+Oct 17 09:15:57 felixubuntu kernel: [    0.175092] CPU features: detected: TLB range maintenance instructions
+Oct 17 09:15:57 felixubuntu kernel: [    0.175098] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+Oct 17 09:15:57 felixubuntu kernel: [    0.208404] CPU: All CPU(s) started at EL1
+Oct 17 09:15:57 felixubuntu kernel: [    0.209252] devtmpfs: initialized
+Oct 17 09:15:57 felixubuntu kernel: [    0.209815] Registered cp15_barrier emulation handler
+Oct 17 09:15:57 felixubuntu kernel: [    0.209823] setend instruction emulation is not supported on this system
+Oct 17 09:15:57 felixubuntu kernel: [    0.209826] KASLR disabled due to lack of seed
+Oct 17 09:15:57 felixubuntu kernel: [    0.209879] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Oct 17 09:15:57 felixubuntu kernel: [    0.209905] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.210090] pinctrl core: initialized pinctrl subsystem
+Oct 17 09:15:57 felixubuntu kernel: [    0.210339] SMBIOS 3.0.0 present.
+Oct 17 09:15:57 felixubuntu kernel: [    0.210344] DMI: Parallels International GmbH. Parallels ARM Virtual Machine/Parallels ARM Virtual Platform, BIOS 19.0.0 (54570) Mon, 14 Aug 202
+Oct 17 09:15:57 felixubuntu kernel: [    0.210583] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 17 09:15:57 felixubuntu kernel: [    0.211438] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+Oct 17 09:15:57 felixubuntu kernel: [    0.211513] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 17 09:15:57 felixubuntu kernel: [    0.211583] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 17 09:15:57 felixubuntu kernel: [    0.211593] audit: initializing netlink subsys (disabled)
+Oct 17 09:15:57 felixubuntu kernel: [    0.211699] audit: type=2000 audit(0.176:1): state=initialized audit_enabled=0 res=1
+Oct 17 09:15:57 felixubuntu kernel: [    0.211917] thermal_sys: Registered thermal governor 'fair_share'
+Oct 17 09:15:57 felixubuntu kernel: [    0.211918] thermal_sys: Registered thermal governor 'bang_bang'
+Oct 17 09:15:57 felixubuntu kernel: [    0.211920] thermal_sys: Registered thermal governor 'step_wise'
+Oct 17 09:15:57 felixubuntu kernel: [    0.211921] thermal_sys: Registered thermal governor 'user_space'
+Oct 17 09:15:57 felixubuntu kernel: [    0.211922] thermal_sys: Registered thermal governor 'power_allocator'
+Oct 17 09:15:57 felixubuntu kernel: [    0.211936] cpuidle: using governor ladder
+Oct 17 09:15:57 felixubuntu kernel: [    0.211943] cpuidle: using governor menu
+Oct 17 09:15:57 felixubuntu kernel: [    0.211975] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Oct 17 09:15:57 felixubuntu kernel: [    0.212013] ASID allocator initialised with 256 entries
+Oct 17 09:15:57 felixubuntu kernel: [    0.212159] ACPI: bus type PCI registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.212169] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 17 09:15:57 felixubuntu kernel: [    0.212284] Serial: AMBA PL011 UART driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.213444] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 17 09:15:57 felixubuntu kernel: [    0.213447] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+Oct 17 09:15:57 felixubuntu kernel: [    0.213448] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 17 09:15:57 felixubuntu kernel: [    0.213449] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+Oct 17 09:15:57 felixubuntu kernel: [    0.217571] fbcon: Taking over console
+Oct 17 09:15:57 felixubuntu kernel: [    0.217592] ACPI: Added _OSI(Module Device)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217594] ACPI: Added _OSI(Processor Device)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217595] ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217596] ACPI: Added _OSI(Processor Aggregator Device)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217597] ACPI: Added _OSI(Linux-Dell-Video)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217598] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217599] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Oct 17 09:15:57 felixubuntu kernel: [    0.217927] ACPI: 1 ACPI AML tables successfully acquired and loaded
+Oct 17 09:15:57 felixubuntu kernel: [    0.218079] ACPI: Interpreter enabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.218080] ACPI: Using GIC for interrupt routing
+Oct 17 09:15:57 felixubuntu kernel: [    0.218087] ACPI: MCFG table detected, 1 entries
+Oct 17 09:15:57 felixubuntu kernel: [    0.219402] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00])
+Oct 17 09:15:57 felixubuntu kernel: [    0.219411] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct 17 09:15:57 felixubuntu kernel: [    0.219414] acpi PNP0A08:00: _OSC: platform retains control of PCIe features (AE_NOT_FOUND)
+Oct 17 09:15:57 felixubuntu kernel: [    0.219569] acpi PNP0A08:00: [Firmware Bug]: ECAM area [mem 0x02300000-0x023fffff] not reserved in ACPI namespace
+Oct 17 09:15:57 felixubuntu kernel: [    0.219588] acpi PNP0A08:00: ECAM at [mem 0x02300000-0x023fffff] for [bus 00]
+Oct 17 09:15:57 felixubuntu kernel: [    0.219603] ACPI: Remapped I/O 0x0000000002400000 to [io  0x0000-0xfffff window]
+Oct 17 09:15:57 felixubuntu kernel: [    0.219626] PCI host bridge to bus 0000:00
+Oct 17 09:15:57 felixubuntu kernel: [    0.219628] pci_bus 0000:00: root bus resource [io  0x0000-0xfffff window] (bus address [0x2400000-0x24fffff])
+Oct 17 09:15:57 felixubuntu kernel: [    0.219630] pci_bus 0000:00: root bus resource [mem 0x10000000-0x1fffffff window]
+Oct 17 09:15:57 felixubuntu kernel: [    0.219662] pci 0000:00:01.0: [8086:293e] type 00 class 0x040300
+Oct 17 09:15:57 felixubuntu kernel: [    0.219684] pci 0000:00:01.0: reg 0x10: [mem 0x14004000-0x14007fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.219842] pci 0000:00:02.0: [8086:265c] type 00 class 0x0c0320
+Oct 17 09:15:57 felixubuntu kernel: [    0.219889] pci 0000:00:02.0: reg 0x10: [mem 0x1400d000-0x1400d3ff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220025] pci 0000:00:03.0: [1033:0194] type 00 class 0x0c0330
+Oct 17 09:15:57 felixubuntu kernel: [    0.220042] pci 0000:00:03.0: reg 0x10: [mem 0x1400c000-0x1400cfff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220133] pci 0000:00:05.0: [1af4:1000] type 00 class 0x020000
+Oct 17 09:15:57 felixubuntu kernel: [    0.220157] pci 0000:00:05.0: reg 0x10: [mem 0x1400b000-0x1400bfff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220173] pci 0000:00:05.0: reg 0x14: [mem 0x1400a000-0x1400afff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220456] pci 0000:00:09.0: [1ab8:4000] type 00 class 0xff0000
+Oct 17 09:15:57 felixubuntu kernel: [    0.220485] pci 0000:00:09.0: reg 0x10: [mem 0x14009000-0x14009fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220579] pci 0000:00:0a.0: [1af4:1050] type 00 class 0x030000
+Oct 17 09:15:57 felixubuntu kernel: [    0.220711] pci 0000:00:0a.0: reg 0x10: [mem 0x10000000-0x13ffffff pref]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220733] pci 0000:00:0a.0: reg 0x14: [mem 0x14008000-0x14008fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220800] pci 0000:00:0a.0: reg 0x20: [mem 0x14000000-0x14003fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220851] pci 0000:00:0a.0: BAR 0: assigned to efifb
+Oct 17 09:15:57 felixubuntu kernel: [    0.220967] pci 0000:00:0a.0: BAR 0: assigned [mem 0x10000000-0x13ffffff pref]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220981] pci 0000:00:01.0: BAR 0: assigned [mem 0x14000000-0x14003fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220984] pci 0000:00:0a.0: BAR 4: assigned [mem 0x14004000-0x14007fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220995] pci 0000:00:03.0: BAR 0: assigned [mem 0x14008000-0x14008fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.220999] pci 0000:00:05.0: BAR 0: assigned [mem 0x14009000-0x14009fff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221005] pci 0000:00:05.0: BAR 1: assigned [mem 0x1400a000-0x1400afff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221014] pci 0000:00:09.0: BAR 0: assigned [mem 0x1400b000-0x1400bfff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221017] pci 0000:00:0a.0: BAR 1: assigned [mem 0x1400c000-0x1400cfff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221032] pci 0000:00:02.0: BAR 0: assigned [mem 0x1400d000-0x1400d3ff]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221039] pci_bus 0000:00: resource 4 [io  0x0000-0xfffff window]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221041] pci_bus 0000:00: resource 5 [mem 0x10000000-0x1fffffff window]
+Oct 17 09:15:57 felixubuntu kernel: [    0.221699] iommu: Default domain type: Translated 
+Oct 17 09:15:57 felixubuntu kernel: [    0.221703] iommu: DMA domain TLB invalidation policy: strict mode 
+Oct 17 09:15:57 felixubuntu kernel: [    0.221888] SCSI subsystem initialized
+Oct 17 09:15:57 felixubuntu kernel: [    0.221975] libata version 3.00 loaded.
+Oct 17 09:15:57 felixubuntu kernel: [    0.222070] pci 0000:00:0a.0: vgaarb: setting as boot VGA device
+Oct 17 09:15:57 felixubuntu kernel: [    0.222073] pci 0000:00:0a.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Oct 17 09:15:57 felixubuntu kernel: [    0.222075] pci 0000:00:0a.0: vgaarb: bridge control possible
+Oct 17 09:15:57 felixubuntu kernel: [    0.222076] vgaarb: loaded
+Oct 17 09:15:57 felixubuntu kernel: [    0.222099] ACPI: bus type USB registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.222109] usbcore: registered new interface driver usbfs
+Oct 17 09:15:57 felixubuntu kernel: [    0.222114] usbcore: registered new interface driver hub
+Oct 17 09:15:57 felixubuntu kernel: [    0.222117] usbcore: registered new device driver usb
+Oct 17 09:15:57 felixubuntu kernel: [    0.222154] pps_core: LinuxPPS API ver. 1 registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.222156] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 17 09:15:57 felixubuntu kernel: [    0.222158] PTP clock support registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.222229] EDAC MC: Ver: 3.0.0
+Oct 17 09:15:57 felixubuntu kernel: [    0.222360] Registered efivars operations
+Oct 17 09:15:57 felixubuntu kernel: [    0.222466] No ACPI PMU IRQ for CPU0
+Oct 17 09:15:57 felixubuntu kernel: [    0.222467] No ACPI PMU IRQ for CPU1
+Oct 17 09:15:57 felixubuntu kernel: [    0.222665] NetLabel: Initializing
+Oct 17 09:15:57 felixubuntu kernel: [    0.222669] NetLabel:  domain hash size = 128
+Oct 17 09:15:57 felixubuntu kernel: [    0.222670] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 17 09:15:57 felixubuntu kernel: [    0.222682] NetLabel:  unlabeled traffic allowed by default
+Oct 17 09:15:57 felixubuntu kernel: [    0.222815] clocksource: Switched to clocksource arch_sys_counter
+Oct 17 09:15:57 felixubuntu kernel: [    0.237088] VFS: Disk quotas dquot_6.6.0
+Oct 17 09:15:57 felixubuntu kernel: [    0.237102] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 17 09:15:57 felixubuntu kernel: [    0.237205] AppArmor: AppArmor Filesystem Enabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.237215] pnp: PnP ACPI init
+Oct 17 09:15:57 felixubuntu kernel: [    0.237298] pnp: PnP ACPI: found 0 devices
+Oct 17 09:15:57 felixubuntu kernel: [    0.239714] NET: Registered PF_INET protocol family
+Oct 17 09:15:57 felixubuntu kernel: [    0.239806] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240248] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240325] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240363] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240452] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240461] TCP: Hash tables configured (established 16384 bind 16384)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240544] MPTCP token hash table entries: 2048 (order: 3, 49152 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240560] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240572] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240594] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 17 09:15:57 felixubuntu kernel: [    0.240597] NET: Registered PF_XDP protocol family
+Oct 17 09:15:57 felixubuntu kernel: [    0.240626] pci 0000:00:03.0: enabling device (0010 -> 0012)
+Oct 17 09:15:57 felixubuntu kernel: [    0.240650] PCI: CLS 0 bytes, default 64
+Oct 17 09:15:57 felixubuntu kernel: [    0.240693] Trying to unpack rootfs image as initramfs...
+Oct 17 09:15:57 felixubuntu kernel: [    0.250850] kvm [1]: HYP mode not available
+Oct 17 09:15:57 felixubuntu kernel: [    0.250994] Initialise system trusted keyrings
+Oct 17 09:15:57 felixubuntu kernel: [    0.251007] Key type blacklist registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.251042] workingset: timestamp_bits=40 max_order=19 bucket_order=0
+Oct 17 09:15:57 felixubuntu kernel: [    0.251529] zbud: loaded
+Oct 17 09:15:57 felixubuntu kernel: [    0.251659] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct 17 09:15:57 felixubuntu kernel: [    0.251740] fuse: init (API version 7.34)
+Oct 17 09:15:57 felixubuntu kernel: [    0.251812] integrity: Platform Keyring initialized
+Oct 17 09:15:57 felixubuntu kernel: [    0.260437] Key type asymmetric registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.260438] Asymmetric key parser 'x509' registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.260460] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Oct 17 09:15:57 felixubuntu kernel: [    0.260478] io scheduler mq-deadline registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.260847] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct 17 09:15:57 felixubuntu kernel: [    0.261070] ACPI: AC: AC Adapter [ADP0] (off-line)
+Oct 17 09:15:57 felixubuntu kernel: [    0.261088] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+Oct 17 09:15:57 felixubuntu kernel: [    0.261096] ACPI: button: Power Button [PWRB]
+Oct 17 09:15:57 felixubuntu kernel: [    0.261150] ACPI GTDT: Revision:1 doesn't support Platform Timers.
+Oct 17 09:15:57 felixubuntu kernel: [    0.261679] virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.262056] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.262654] SuperH (H)SCI(F) driver initialized
+Oct 17 09:15:57 felixubuntu kernel: [    0.262675] msm_serial: driver initialized
+Oct 17 09:15:57 felixubuntu kernel: [    0.262874] ACPI: battery: Slot [BAT0] (battery present)
+Oct 17 09:15:57 felixubuntu kernel: [    0.262925] cacheinfo: Unable to detect cache hierarchy for CPU 0
+Oct 17 09:15:57 felixubuntu kernel: [    0.263815] loop: module loaded
+Oct 17 09:15:57 felixubuntu kernel: [    0.263864] SPI driver altr_a10sr has no spi_device_id for altr,a10sr
+Oct 17 09:15:57 felixubuntu kernel: [    0.263974] tun: Universal TUN/TAP device driver, 1.6
+Oct 17 09:15:57 felixubuntu kernel: [    0.264032] PPP generic driver version 2.4.2
+Oct 17 09:15:57 felixubuntu kernel: [    0.264049] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.264054] ehci-pci: EHCI PCI platform driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.264092] ehci-pci 0000:00:02.0: EHCI Host Controller
+Oct 17 09:15:57 felixubuntu kernel: [    0.264102] ehci-pci 0000:00:02.0: new USB bus registered, assigned bus number 1
+Oct 17 09:15:57 felixubuntu kernel: [    0.264159] ehci-pci 0000:00:02.0: Enabling legacy PCI PM
+Oct 17 09:15:57 felixubuntu kernel: [    0.264180] ehci-pci 0000:00:02.0: irq 18, io mem 0x1400d000
+Oct 17 09:15:57 felixubuntu kernel: [    0.278849] ehci-pci 0000:00:02.0: USB 2.0 started, EHCI 1.00
+Oct 17 09:15:57 felixubuntu kernel: [    0.278873] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+Oct 17 09:15:57 felixubuntu kernel: [    0.278875] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 17 09:15:57 felixubuntu kernel: [    0.278876] usb usb1: Product: EHCI Host Controller
+Oct 17 09:15:57 felixubuntu kernel: [    0.278877] usb usb1: Manufacturer: Linux 5.15.0-86-generic ehci_hcd
+Oct 17 09:15:57 felixubuntu kernel: [    0.278878] usb usb1: SerialNumber: 0000:00:02.0
+Oct 17 09:15:57 felixubuntu kernel: [    0.278917] hub 1-0:1.0: USB hub found
+Oct 17 09:15:57 felixubuntu kernel: [    0.278920] hub 1-0:1.0: 15 ports detected
+Oct 17 09:15:57 felixubuntu kernel: [    0.279051] ehci-orion: EHCI orion driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.279069] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.279071] ohci-pci: OHCI PCI platform driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.279075] uhci_hcd: USB Universal Host Controller Interface driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.279105] mousedev: PS/2 mouse device common for all mice
+Oct 17 09:15:57 felixubuntu kernel: [    0.279190] rtc-efi rtc-efi.0: registered as rtc0
+Oct 17 09:15:57 felixubuntu kernel: [    0.279196] rtc-efi rtc-efi.0: setting system clock to 2023-10-17T07:15:49 UTC (1697526949)
+Oct 17 09:15:57 felixubuntu kernel: [    0.279218] i2c_dev: i2c /dev entries driver
+Oct 17 09:15:57 felixubuntu kernel: [    0.279291] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct 17 09:15:57 felixubuntu kernel: [    0.279303] device-mapper: uevent: version 1.0.3
+Oct 17 09:15:57 felixubuntu kernel: [    0.279326] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+Oct 17 09:15:57 felixubuntu kernel: [    0.279534] ledtrig-cpu: registered to indicate activity on CPUs
+Oct 17 09:15:57 felixubuntu kernel: [    0.279672] drop_monitor: Initializing network drop monitor service
+Oct 17 09:15:57 felixubuntu kernel: [    0.279761] NET: Registered PF_INET6 protocol family
+Oct 17 09:15:57 felixubuntu kernel: [    0.650957] Freeing initrd memory: 107536K
+Oct 17 09:15:57 felixubuntu kernel: [    0.656352] Segment Routing with IPv6
+Oct 17 09:15:57 felixubuntu kernel: [    0.656365] In-situ OAM (IOAM) with IPv6
+Oct 17 09:15:57 felixubuntu kernel: [    0.656382] NET: Registered PF_PACKET protocol family
+Oct 17 09:15:57 felixubuntu kernel: [    0.656436] Key type dns_resolver registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.656552] registered taskstats version 1
+Oct 17 09:15:57 felixubuntu kernel: [    0.656617] Loading compiled-in X.509 certificates
+Oct 17 09:15:57 felixubuntu kernel: [    0.657055] Loaded X.509 cert 'Build time autogenerated kernel key: eb5f3eff4576142b5c77b246305c3754f05b963a'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657334] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657612] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657615] blacklist: Loading compiled-in revocation X.509 certificates
+Oct 17 09:15:57 felixubuntu kernel: [    0.657634] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657641] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657648] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657658] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657665] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657673] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657680] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657687] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Oct 17 09:15:57 felixubuntu kernel: [    0.657731] zswap: loaded using pool lzo/zbud
+Oct 17 09:15:57 felixubuntu kernel: [    0.657880] Key type .fscrypt registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.657881] Key type fscrypt-provisioning registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.669070] cryptd: max_cpu_qlen set to 1000
+Oct 17 09:15:57 felixubuntu kernel: [    0.675857] Key type encrypted registered
+Oct 17 09:15:57 felixubuntu kernel: [    0.675862] AppArmor: AppArmor sha1 policy hashing enabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.675939] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Oct 17 09:15:57 felixubuntu kernel: [    0.676163] integrity: Loaded X.509 cert 'Canonical Ltd. Master Certificate Authority: ad91990bc22ab1f517048c23b6655a268e345a63'
+Oct 17 09:15:57 felixubuntu kernel: [    0.676165] ima: No TPM chip found, activating TPM-bypass!
+Oct 17 09:15:57 felixubuntu kernel: [    0.676168] Loading compiled-in module X.509 certificates
+Oct 17 09:15:57 felixubuntu kernel: [    0.676448] Loaded X.509 cert 'Build time autogenerated kernel key: eb5f3eff4576142b5c77b246305c3754f05b963a'
+Oct 17 09:15:57 felixubuntu kernel: [    0.676449] ima: Allocated hash algorithm: sha1
+Oct 17 09:15:57 felixubuntu kernel: [    0.676453] ima: No architecture policies found
+Oct 17 09:15:57 felixubuntu kernel: [    0.676459] evm: Initialising EVM extended attributes:
+Oct 17 09:15:57 felixubuntu kernel: [    0.676460] evm: security.selinux
+Oct 17 09:15:57 felixubuntu kernel: [    0.676461] evm: security.SMACK64
+Oct 17 09:15:57 felixubuntu kernel: [    0.676461] evm: security.SMACK64EXEC
+Oct 17 09:15:57 felixubuntu kernel: [    0.676462] evm: security.SMACK64TRANSMUTE
+Oct 17 09:15:57 felixubuntu kernel: [    0.676462] evm: security.SMACK64MMAP
+Oct 17 09:15:57 felixubuntu kernel: [    0.676463] evm: security.apparmor
+Oct 17 09:15:57 felixubuntu kernel: [    0.676463] evm: security.ima
+Oct 17 09:15:57 felixubuntu kernel: [    0.676464] evm: security.capability
+Oct 17 09:15:57 felixubuntu kernel: [    0.676464] evm: HMAC attrs: 0x1
+Oct 17 09:15:57 felixubuntu kernel: [    0.678636] Freeing unused kernel memory: 9600K
+Oct 17 09:15:57 felixubuntu kernel: [    0.697448] Checked W+X mappings: passed, no W+X pages found
+Oct 17 09:15:57 felixubuntu kernel: [    0.697456] Run /init as init process
+Oct 17 09:15:57 felixubuntu kernel: [    0.697458]   with arguments:
+Oct 17 09:15:57 felixubuntu kernel: [    0.697458]     /init
+Oct 17 09:15:57 felixubuntu kernel: [    0.697459]   with environment:
+Oct 17 09:15:57 felixubuntu kernel: [    0.697459]     HOME=/
+Oct 17 09:15:57 felixubuntu kernel: [    0.697460]     TERM=linux
+Oct 17 09:15:57 felixubuntu kernel: [    0.697460]     BOOT_IMAGE=/vmlinuz-5.15.0-86-generic
+Oct 17 09:15:57 felixubuntu kernel: [    0.811534] ahci PRL4010:00: supply ahci not found, using dummy regulator
+Oct 17 09:15:57 felixubuntu kernel: [    0.811561] ahci PRL4010:00: supply phy not found, using dummy regulator
+Oct 17 09:15:57 felixubuntu kernel: [    0.811566] ahci PRL4010:00: supply target not found, using dummy regulator
+Oct 17 09:15:57 felixubuntu kernel: [    0.811595] ahci PRL4010:00: SSS flag set, parallel bus scan disabled
+Oct 17 09:15:57 felixubuntu kernel: [    0.811669] ahci PRL4010:00: AHCI 0001.0100 32 slots 6 ports 3 Gbps 0x3f impl platform mode
+Oct 17 09:15:57 felixubuntu kernel: [    0.811672] ahci PRL4010:00: flags: 64bit ncq stag pm led only slum part 
+Oct 17 09:15:57 felixubuntu kernel: [    0.811827] prl_tg: loading out-of-tree module taints kernel.
+Oct 17 09:15:57 felixubuntu kernel: [    0.811830] prl_tg: module license 'Parallels' taints kernel.
+Oct 17 09:15:57 felixubuntu kernel: [    0.811834] Disabling lock debugging due to kernel taint
+Oct 17 09:15:57 felixubuntu kernel: [    0.811859] prl_tg: module verification failed: signature and/or required key missing - tainting kernel
+Oct 17 09:15:57 felixubuntu kernel: [    0.812009] Parallels ToolGate driver 1.10.2 loaded
+Oct 17 09:15:57 felixubuntu kernel: [    0.812039] prl_tg 0000:00:09.0: enabling device (0010 -> 0012)
+Oct 17 09:15:57 felixubuntu kernel: [    0.812120] Detected Parallels ToolGate device, IRQ 20
+Oct 17 09:15:57 felixubuntu kernel: [    0.813267] xhci_hcd 0000:00:03.0: xHCI Host Controller
+Oct 17 09:15:57 felixubuntu kernel: [    0.813274] xhci_hcd 0000:00:03.0: new USB bus registered, assigned bus number 2
+Oct 17 09:15:57 felixubuntu kernel: [    0.813459] xhci_hcd 0000:00:03.0: hcc params 0x01c15001 hci version 0x110 quirks 0x0000000000000014
+Oct 17 09:15:57 felixubuntu kernel: [    0.813556] xhci_hcd 0000:00:03.0: xHCI Host Controller
+Oct 17 09:15:57 felixubuntu kernel: [    0.813557] xhci_hcd 0000:00:03.0: new USB bus registered, assigned bus number 3
+Oct 17 09:15:57 felixubuntu kernel: [    0.813559] xhci_hcd 0000:00:03.0: Host supports USB 3.1 Enhanced SuperSpeed
+Oct 17 09:15:57 felixubuntu kernel: [    0.814088] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+Oct 17 09:15:57 felixubuntu kernel: [    0.814091] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 17 09:15:57 felixubuntu kernel: [    0.814092] usb usb2: Product: xHCI Host Controller
+Oct 17 09:15:57 felixubuntu kernel: [    0.814093] usb usb2: Manufacturer: Linux 5.15.0-86-generic xhci-hcd
+Oct 17 09:15:57 felixubuntu kernel: [    0.814093] usb usb2: SerialNumber: 0000:00:03.0
+Oct 17 09:15:57 felixubuntu kernel: [    0.816156] hub 2-0:1.0: USB hub found
+Oct 17 09:15:57 felixubuntu kernel: [    0.816214] hub 2-0:1.0: 2 ports detected
+Oct 17 09:15:57 felixubuntu kernel: [    0.816566] usb usb3: We don't know the algorithms for LPM for this host, disabling LPM.
+Oct 17 09:15:57 felixubuntu kernel: [    0.816576] usb usb3: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.15
+Oct 17 09:15:57 felixubuntu kernel: [    0.816578] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 17 09:15:57 felixubuntu kernel: [    0.816579] usb usb3: Product: xHCI Host Controller
+Oct 17 09:15:57 felixubuntu kernel: [    0.816580] usb usb3: Manufacturer: Linux 5.15.0-86-generic xhci-hcd
+Oct 17 09:15:57 felixubuntu kernel: [    0.816581] usb usb3: SerialNumber: 0000:00:03.0
+Oct 17 09:15:57 felixubuntu kernel: [    0.816822] hub 3-0:1.0: USB hub found
+Oct 17 09:15:57 felixubuntu kernel: [    0.816834] hub 3-0:1.0: 12 ports detected
+Oct 17 09:15:57 felixubuntu kernel: [    0.821510] scsi host0: ahci
+Oct 17 09:15:57 felixubuntu kernel: [    0.823227] scsi host1: ahci
+Oct 17 09:15:57 felixubuntu kernel: [    0.823842] scsi host2: ahci
+Oct 17 09:15:57 felixubuntu kernel: [    0.824047] scsi host3: ahci
+Oct 17 09:15:57 felixubuntu kernel: [    0.824097] scsi host4: ahci
+Oct 17 09:15:57 felixubuntu kernel: [    0.824185] scsi host5: ahci
+Oct 17 09:15:57 felixubuntu kernel: [    0.824212] ata1: SATA max UDMA/133 mmio [mem 0x02140000-0x02141fff] port 0x100 irq 15
+Oct 17 09:15:57 felixubuntu kernel: [    0.824215] ata2: SATA max UDMA/133 mmio [mem 0x02140000-0x02141fff] port 0x180 irq 15
+Oct 17 09:15:57 felixubuntu kernel: [    0.824220] ata3: SATA max UDMA/133 mmio [mem 0x02140000-0x02141fff] port 0x200 irq 15
+Oct 17 09:15:57 felixubuntu kernel: [    0.824223] ata4: SATA max UDMA/133 mmio [mem 0x02140000-0x02141fff] port 0x280 irq 15
+Oct 17 09:15:57 felixubuntu kernel: [    0.824227] ata5: SATA max UDMA/133 mmio [mem 0x02140000-0x02141fff] port 0x300 irq 15
+Oct 17 09:15:57 felixubuntu kernel: [    0.824230] ata6: SATA max UDMA/133 mmio [mem 0x02140000-0x02141fff] port 0x380 irq 15
+Oct 17 09:15:57 felixubuntu kernel: [    0.853463] virtio_net virtio1 enp0s5: renamed from eth0
+Oct 17 09:15:57 felixubuntu kernel: [    1.138401] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+Oct 17 09:15:57 felixubuntu kernel: [    1.138670] ata1.00: ATA-8: Ubuntu Linux-0 SSD, F.YC6Q6M, max UDMA/100
+Oct 17 09:15:57 felixubuntu kernel: [    1.138683] ata1.00: 134217728 sectors, multi 0: LBA48 NCQ (depth 32)
+Oct 17 09:15:57 felixubuntu kernel: [    1.138959] ata1.00: configured for UDMA/100
+Oct 17 09:15:57 felixubuntu kernel: [    1.139408] scsi 0:0:0:0: Direct-Access     ATA      Ubuntu Linux-0 S 6Q6M PQ: 0 ANSI: 5
+Oct 17 09:15:57 felixubuntu kernel: [    1.140252] sd 0:0:0:0: Attached scsi generic sg0 type 0
+Oct 17 09:15:57 felixubuntu kernel: [    1.140343] sd 0:0:0:0: [sda] 134217728 512-byte logical blocks: (68.7 GB/64.0 GiB)
+Oct 17 09:15:57 felixubuntu kernel: [    1.140356] sd 0:0:0:0: [sda] 4096-byte physical blocks
+Oct 17 09:15:57 felixubuntu kernel: [    1.140376] sd 0:0:0:0: [sda] Write Protect is off
+Oct 17 09:15:57 felixubuntu kernel: [    1.140383] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Oct 17 09:15:57 felixubuntu kernel: [    1.140407] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 17 09:15:57 felixubuntu kernel: [    1.143648]  sda: sda1 sda2 sda3
+Oct 17 09:15:57 felixubuntu kernel: [    1.144624] sd 0:0:0:0: [sda] Attached SCSI disk
+Oct 17 09:15:57 felixubuntu kernel: [    1.151390] usb 3-1: new SuperSpeed USB device number 2 using xhci_hcd
+Oct 17 09:15:57 felixubuntu kernel: [    1.171210] usb 3-1: LPM exit latency is zeroed, disabling LPM.
+Oct 17 09:15:57 felixubuntu kernel: [    1.171555] usb 3-1: New USB device found, idVendor=203a, idProduct=fffc, bcdDevice= 1.00
+Oct 17 09:15:57 felixubuntu kernel: [    1.171563] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 17 09:15:57 felixubuntu kernel: [    1.171566] usb 3-1: Product: Virtual Mouse
+Oct 17 09:15:57 felixubuntu kernel: [    1.171568] usb 3-1: Manufacturer: Parallels
+Oct 17 09:15:57 felixubuntu kernel: [    1.171570] usb 3-1: SerialNumber: PW3.0
+Oct 17 09:15:57 felixubuntu kernel: [    1.299049] usb 3-2: new SuperSpeed USB device number 3 using xhci_hcd
+Oct 17 09:15:57 felixubuntu kernel: [    1.319664] usb 3-2: LPM exit latency is zeroed, disabling LPM.
+Oct 17 09:15:57 felixubuntu kernel: [    1.320131] usb 3-2: New USB device found, idVendor=203a, idProduct=fffb, bcdDevice= 1.10
+Oct 17 09:15:57 felixubuntu kernel: [    1.320142] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 17 09:15:57 felixubuntu kernel: [    1.320147] usb 3-2: Product: Virtual Keyboard
+Oct 17 09:15:57 felixubuntu kernel: [    1.320151] usb 3-2: Manufacturer: Parallels
+Oct 17 09:15:57 felixubuntu kernel: [    1.320166] usb 3-2: SerialNumber: KBD1.1
+Oct 17 09:15:57 felixubuntu kernel: [    1.344016] random: lvm: uninitialized urandom read (4 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    1.358656] random: lvm: uninitialized urandom read (2 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    1.447209] usb 3-3: new SuperSpeed USB device number 4 using xhci_hcd
+Oct 17 09:15:57 felixubuntu kernel: [    1.457278] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+Oct 17 09:15:57 felixubuntu kernel: [    1.457430] ata2.00: ATAPI: Virtual DVD-ROM [1], FWR1, max UDMA/25
+Oct 17 09:15:57 felixubuntu kernel: [    1.457530] ata2.00: configured for UDMA/25
+Oct 17 09:15:57 felixubuntu kernel: [    1.457911] scsi 1:0:0:0: CD-ROM                     Virtual DVD-ROM  R103 PQ: 0 ANSI: 5
+Oct 17 09:15:57 felixubuntu kernel: [    1.471376] usb 3-3: LPM exit latency is zeroed, disabling LPM.
+Oct 17 09:15:57 felixubuntu kernel: [    1.471721] usb 3-3: New USB device found, idVendor=203a, idProduct=fff9, bcdDevice= 1.00
+Oct 17 09:15:57 felixubuntu kernel: [    1.471728] usb 3-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 17 09:15:57 felixubuntu kernel: [    1.471732] usb 3-3: Product: FaceTime HD-Kamera
+Oct 17 09:15:57 felixubuntu kernel: [    1.471736] usb 3-3: Manufacturer: Parallels
+Oct 17 09:15:57 felixubuntu kernel: [    1.471738] usb 3-3: SerialNumber: 3F45E80A-0176-46F7-B185-BB9E2C0E82E3
+Oct 17 09:15:57 felixubuntu kernel: [    1.484134] hid: raw HID events driver (C) Jiri Kosina
+Oct 17 09:15:57 felixubuntu kernel: [    1.490585] usbcore: registered new interface driver usbhid
+Oct 17 09:15:57 felixubuntu kernel: [    1.490591] usbhid: USB HID core driver
+Oct 17 09:15:57 felixubuntu kernel: [    1.527964] sr 1:0:0:0: [sr0] scsi3-mmc drive: 44x/44x cd/rw xa/form2 cdda tray
+Oct 17 09:15:57 felixubuntu kernel: [    1.527996] cdrom: Uniform CD-ROM driver Revision: 3.20
+Oct 17 09:15:57 felixubuntu kernel: [    1.556633] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Oct 17 09:15:57 felixubuntu kernel: [    1.556760] sr 1:0:0:0: Attached scsi generic sg1 type 5
+Oct 17 09:15:57 felixubuntu kernel: [    1.872112] ata3: SATA link down (SStatus 0 SControl 300)
+Oct 17 09:15:57 felixubuntu kernel: [    2.183049] ata4: SATA link down (SStatus 0 SControl 300)
+Oct 17 09:15:57 felixubuntu kernel: [    2.501060] ata5: SATA link down (SStatus 0 SControl 300)
+Oct 17 09:15:57 felixubuntu kernel: [    2.818643] ata6: SATA link down (SStatus 0 SControl 300)
+Oct 17 09:15:57 felixubuntu kernel: [    2.836175] input: Parallels Virtual Mouse as /devices/pci0000:00/0000:00:03.0/usb3/3-1/3-1:1.0/0003:203A:FFFC.0001/input/input1
+Oct 17 09:15:57 felixubuntu kernel: [    2.836975] hid-generic 0003:203A:FFFC.0001: input,hidraw0: USB HID v1.10 Mouse [Parallels Virtual Mouse] on usb-0000:00:03.0-1/input0
+Oct 17 09:15:57 felixubuntu kernel: [    2.839012] input: Parallels Virtual Mouse as /devices/pci0000:00/0000:00:03.0/usb3/3-1/3-1:1.1/0003:203A:FFFC.0002/input/input2
+Oct 17 09:15:57 felixubuntu kernel: [    2.839113] hid-generic 0003:203A:FFFC.0002: input,hidraw1: USB HID v1.10 Mouse [Parallels Virtual Mouse] on usb-0000:00:03.0-1/input1
+Oct 17 09:15:57 felixubuntu kernel: [    2.839281] input: Parallels Virtual Keyboard as /devices/pci0000:00/0000:00:03.0/usb3/3-2/3-2:1.0/0003:203A:FFFB.0003/input/input3
+Oct 17 09:15:57 felixubuntu kernel: [    2.855793] [drm] pci: virtio-vga detected at 0000:00:0a.0
+Oct 17 09:15:57 felixubuntu kernel: [    2.855878] [drm] features: +virgl -edid -resource_blob -host_visible
+Oct 17 09:15:57 felixubuntu kernel: [    2.856327] [drm] number of scanouts: 16
+Oct 17 09:15:57 felixubuntu kernel: [    2.856334] [drm] number of cap sets: 1
+Oct 17 09:15:57 felixubuntu kernel: [    2.856533] [drm] cap set 0: id 2, max-version 2, max-size 768
+Oct 17 09:15:57 felixubuntu kernel: [    2.857794] [drm] Initialized virtio_gpu 0.1.0 0 for virtio2 on minor 0
+Oct 17 09:15:57 felixubuntu kernel: [    2.858973] virtio_gpu virtio2: [drm] drm_plane_enable_fb_damage_clips() not called
+Oct 17 09:15:57 felixubuntu kernel: [    2.858995] Console: switching to colour frame buffer device 128x48
+Oct 17 09:15:57 felixubuntu kernel: [    2.860915] virtio_gpu virtio2: [drm] fb0: virtio_gpudrmfb frame buffer device
+Oct 17 09:15:57 felixubuntu kernel: [    2.898986] hid-generic 0003:203A:FFFB.0003: input,hidraw2: USB HID v10.01 Keyboard [Parallels Virtual Keyboard] on usb-0000:00:03.0-2/input0
+Oct 17 09:15:57 felixubuntu kernel: [    2.899125] input: Parallels Virtual Keyboard as /devices/pci0000:00/0000:00:03.0/usb3/3-2/3-2:1.1/0003:203A:FFFB.0004/input/input4
+Oct 17 09:15:57 felixubuntu kernel: [    2.962209] hid-generic 0003:203A:FFFB.0004: input,hidraw3: USB HID v10.01 Keyboard [Parallels Virtual Keyboard] on usb-0000:00:03.0-2/input1
+Oct 17 09:15:57 felixubuntu kernel: [    3.094818] raid6: neonx8   gen() 37078 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.162820] raid6: neonx8   xor() 29611 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.230821] raid6: neonx4   gen() 39611 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.298818] raid6: neonx4   xor() 31322 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.366817] raid6: neonx2   gen() 39867 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.434817] raid6: neonx2   xor() 31540 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.502818] raid6: neonx1   gen() 35838 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.570817] raid6: neonx1   xor() 24701 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.638822] raid6: int64x8  gen() 15477 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.706820] raid6: int64x8  xor()  8287 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.774821] raid6: int64x4  gen() 13986 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.842820] raid6: int64x4  xor()  7508 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.910818] raid6: int64x2  gen() 12686 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    3.978820] raid6: int64x2  xor()  6789 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    4.046822] raid6: int64x1  gen() 11115 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    4.114818] raid6: int64x1  xor()  5878 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    4.115109] raid6: using algorithm neonx2 gen() 39867 MB/s
+Oct 17 09:15:57 felixubuntu kernel: [    4.115385] raid6: .... xor() 31540 MB/s, rmw enabled
+Oct 17 09:15:57 felixubuntu kernel: [    4.115667] raid6: using neon recovery algorithm
+Oct 17 09:15:57 felixubuntu kernel: [    4.117699] xor: measuring software checksum speed
+Oct 17 09:15:57 felixubuntu kernel: [    4.118324]    8regs           : 38493 MB/sec
+Oct 17 09:15:57 felixubuntu kernel: [    4.118943]    32regs          : 32257 MB/sec
+Oct 17 09:15:57 felixubuntu kernel: [    4.119399]    arm64_neon      : 60634 MB/sec
+Oct 17 09:15:57 felixubuntu kernel: [    4.119661] xor: using function: arm64_neon (60634 MB/sec)
+Oct 17 09:15:57 felixubuntu kernel: [    4.120624] async_tx: api initialized (async)
+Oct 17 09:15:57 felixubuntu kernel: [    4.142590] random: lvm: uninitialized urandom read (4 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    4.198518] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=yes
+Oct 17 09:15:57 felixubuntu kernel: [    4.300383] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Oct 17 09:15:57 felixubuntu kernel: [    4.489527] random: lvmconfig: uninitialized urandom read (4 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    4.640887] random: systemd: uninitialized urandom read (16 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    4.716201] pstore: Using crash dump compression: deflate
+Oct 17 09:15:57 felixubuntu kernel: [    4.716203] pstore: Registered efi as persistent store backend
+Oct 17 09:15:57 felixubuntu kernel: [    4.717673] EXT4-fs (dm-0): re-mounted. Opts: (null). Quota mode: none.
+Oct 17 09:15:57 felixubuntu kernel: [    4.756570] Adding 2097148k swap on /swap.img.  Priority:-2 extents:2 across:3792896k SSFS
+Oct 17 09:15:57 felixubuntu kernel: [    4.764528] alua: device handler registered
+Oct 17 09:15:57 felixubuntu kernel: [    4.765513] emc: device handler registered
+Oct 17 09:15:57 felixubuntu kernel: [    4.767496] rdac: device handler registered
+Oct 17 09:15:57 felixubuntu kernel: [    4.875576] loop0: detected capacity change from 0 to 121336
+Oct 17 09:15:57 felixubuntu kernel: [    4.883633] loop1: detected capacity change from 0 to 972976
+Oct 17 09:15:57 felixubuntu kernel: [    4.886696] loop2: detected capacity change from 0 to 121368
+Oct 17 09:15:57 felixubuntu kernel: [    4.891626] loop3: detected capacity change from 0 to 72736
+Oct 17 09:15:57 felixubuntu kernel: [    4.897140] loop4: detected capacity change from 0 to 95056
+Oct 17 09:15:57 felixubuntu kernel: [    4.903853] loop5: detected capacity change from 0 to 224472
+Oct 17 09:15:57 felixubuntu kernel: [    4.904517] loop6: detected capacity change from 0 to 8
+Oct 17 09:15:57 felixubuntu kernel: [    4.904870] loop7: detected capacity change from 0 to 187776
+Oct 17 09:15:57 felixubuntu kernel: [    4.905479] loop8: detected capacity change from 0 to 140352
+Oct 17 09:15:57 felixubuntu kernel: [    4.906126] loop9: detected capacity change from 0 to 464232
+Oct 17 09:15:57 felixubuntu kernel: [    5.182403] acpi-tad ACPI000E:00: Unsupported capabilities
+Oct 17 09:15:57 felixubuntu kernel: [    5.271391] mc: Linux media interface: v0.10
+Oct 17 09:15:57 felixubuntu kernel: [    5.274078] videodev: Linux video capture interface: v2.00
+Oct 17 09:15:57 felixubuntu kernel: [    5.311545] random: systemd: uninitialized urandom read (16 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    5.311557] random: systemd: uninitialized urandom read (16 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    5.320784] usb 3-3: Found UVC 1.00 device FaceTime HD-Kamera (203a:fff9)
+Oct 17 09:15:57 felixubuntu kernel: [    5.324661] usbcore: registered new interface driver uvcvideo
+Oct 17 09:15:57 felixubuntu kernel: [    5.422404] random: systemd: uninitialized urandom read (16 bytes read)
+Oct 17 09:15:57 felixubuntu kernel: [    5.586214] snd_hda_intel 0000:00:01.0: enabling device (0000 -> 0002)
+Oct 17 09:15:57 felixubuntu kernel: [    5.586240] snd_hda_intel 0000:00:01.0: Force to snoop mode by module option
+Oct 17 09:15:57 felixubuntu kernel: [    5.611408] snd_hda_codec_generic hdaudioC0D0: autoconfig for Generic: line_outs=5 (0xa/0xc/0xb/0xf/0xd) type:speaker
+Oct 17 09:15:57 felixubuntu kernel: [    5.611410] snd_hda_codec_generic hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Oct 17 09:15:57 felixubuntu kernel: [    5.611411] snd_hda_codec_generic hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Oct 17 09:15:57 felixubuntu kernel: [    5.611412] snd_hda_codec_generic hdaudioC0D0:    mono: mono_out=0x0
+Oct 17 09:15:57 felixubuntu kernel: [    5.611412] snd_hda_codec_generic hdaudioC0D0:    inputs:
+Oct 17 09:15:57 felixubuntu kernel: [    5.611413] snd_hda_codec_generic hdaudioC0D0:      Mic=0xe
+Oct 17 09:15:57 felixubuntu kernel: [    5.612965] input: HDA Intel Mic as /devices/pci0000:00/0000:00:01.0/sound/card0/input5
+Oct 17 09:15:57 felixubuntu kernel: [    5.612994] input: HDA Intel Speaker as /devices/pci0000:00/0000:00:01.0/sound/card0/input6
+Oct 17 09:15:57 felixubuntu kernel: [    5.613015] input: HDA Intel Speaker as /devices/pci0000:00/0000:00:01.0/sound/card0/input7
+Oct 17 09:15:57 felixubuntu kernel: [    5.613035] input: HDA Intel Speaker as /devices/pci0000:00/0000:00:01.0/sound/card0/input8
+Oct 17 09:15:57 felixubuntu kernel: [    5.613060] input: HDA Intel Speaker as /devices/pci0000:00/0000:00:01.0/sound/card0/input9
+Oct 17 09:15:57 felixubuntu kernel: [    5.613081] input: HDA Intel Speaker as /devices/pci0000:00/0000:00:01.0/sound/card0/input10
+Oct 17 09:15:57 felixubuntu kernel: [    5.655256] EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Oct 17 09:15:57 felixubuntu kernel: [    5.825382] audit: type=1400 audit(1697526955.040:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=790 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.825385] audit: type=1400 audit(1697526955.040:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=790 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.832499] audit: type=1400 audit(1697526955.048:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=789 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.858920] audit: type=1400 audit(1697526955.076:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=799 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.858922] audit: type=1400 audit(1697526955.076:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=799 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.858923] audit: type=1400 audit(1697526955.076:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=799 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.858924] audit: type=1400 audit(1697526955.076:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=799 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.875139] audit: type=1400 audit(1697526955.092:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=813 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.875141] audit: type=1400 audit(1697526955.092:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=813 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    5.875141] audit: type=1400 audit(1697526955.092:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=813 comm="apparmor_parser"
+Oct 17 09:15:57 felixubuntu kernel: [    6.438822] random: crng init done
+Oct 17 09:15:57 felixubuntu kernel: [    6.438824] random: 292 urandom warning(s) missed due to ratelimiting
+Oct 17 09:15:57 felixubuntu kernel: [    8.634579] Parallels Linux shared folders filesystem driver 2.1.2 loaded
+Oct 17 09:15:59 felixubuntu kernel: [   10.122489] loop10: detected capacity change from 0 to 8
+Oct 17 09:16:01 felixubuntu kernel: [   11.972705] rfkill: input handler disabled
+Oct 17 09:16:16 felixubuntu kernel: [   27.109652] rfkill: input handler enabled
+Oct 17 09:16:17 felixubuntu kernel: [   28.111292] rfkill: input handler disabled
+Oct 17 09:16:49 felixubuntu kernel: [   60.878308] Major = 509 Minor = 0
+Oct 17 09:16:49 felixubuntu kernel: [   60.878508] Module loaded
+Oct 17 09:17:03 felixubuntu kernel: [   74.470157] Device file opened
+Oct 17 09:17:14 felixubuntu kernel: [   85.472093] Word: Das
+Oct 17 09:17:15 felixubuntu kernel: [   86.494342] Word: ist
+Oct 17 09:17:16 felixubuntu kernel: [   87.518559] Word: ein
+Oct 17 09:17:17 felixubuntu kernel: [   88.541682] Word: aus
+Oct 17 09:17:18 felixubuntu kernel: [   89.565536] Word: dem
+Oct 17 09:17:19 felixubuntu kernel: [   90.591180] Word: Userspace
+Oct 17 09:17:20 felixubuntu kernel: [   91.615008] Word: übertragener
+Oct 17 09:17:21 felixubuntu kernel: [   92.637213] Word: Text
+Oct 17 09:17:32 felixubuntu kernel: [  103.240198] Device file closed
+Oct 17 09:17:41 felixubuntu kernel: [  113.033204] Module unloaded
